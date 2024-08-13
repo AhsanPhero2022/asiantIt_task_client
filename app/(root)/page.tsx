@@ -1,9 +1,10 @@
-import React from "react";
+import HeroSection from "@/components/HeroSection";
+import Sidebar from "@/components/Sidebar";
 
 const Home = () => {
   return (
-    <div>
-      <h1>this is home</h1>
+    <div className="w-full ">
+      <HeroSection />
     </div>
   );
 };

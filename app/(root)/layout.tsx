@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
 
 export default function RootLayout({
   children,
@@ -8,7 +9,11 @@ export default function RootLayout({
   return (
     <main className="">
       <Header />
-      {children}
+
+      <div className="flex gap-5 container  mx-auto ">
+        <Sidebar />
+        {children}
+      </div>
     </main>
   );
 }

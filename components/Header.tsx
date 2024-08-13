@@ -9,15 +9,15 @@ const Header = () => {
     <header className="py-8 xl:py-12 ">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
-          <h1 className="text-4xl font-semibold">
-            Soriful <span className="text-accent">.</span>
-          </h1>
+          <h1 className="text-4xl text-accent font-semibold">MedEasy</h1>
         </Link>
 
         <div className="hidden lg:flex xl:flex items-center gap-8">
           <Nav />
           <Link href="/contact">
-            <Button className="">Hire me</Button>
+            <Button className="bg-accent hover:bg-hover hover:text-black/80 ">
+              Sign In
+            </Button>
           </Link>
         </div>
         <div className="xl:hidden lg:hidden">
