@@ -4,7 +4,7 @@ import VideoModal from "../VideoModal";
 
 const OrderMedicine = () => {
   return (
-    <div>
+    <div className="my-12">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
         <div className="space-y-4 w-[50%]">
           <h1 className="text-4xl font-bold">কিভাবে ঔষধ অর্ডার করবেন?</h1>
@@ -23,8 +23,8 @@ const OrderMedicine = () => {
           <Image
             src="https://medeasy.health/_next/image?url=%2Fassets%2Fimages%2Fplay-store.png&w=256&q=75"
             alt="image"
-            width={100}
-            height={100}
+            width={150}
+            height={150}
           />
         </div>
         <div className="w-[50%]">

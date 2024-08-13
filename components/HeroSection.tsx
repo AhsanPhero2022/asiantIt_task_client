@@ -4,6 +4,8 @@ import { MdOutlineNoteAdd } from "react-icons/md";
 import { CiVideoOn } from "react-icons/ci";
 import { MdOutlineVoiceOverOff } from "react-icons/md";
 import OrderMedicine from "./home/OrderMedicine";
+import Testimonial from "./Testimonial";
+import DigitalPlatForm from "./DigitalPlatForm";
 
 const productCategories = [
   {
@@ -81,6 +83,8 @@ const HeroSection = () => {
       </div>
 
       <OrderMedicine />
+      <Testimonial />
+      <DigitalPlatForm />
     </section>
   );
 };
