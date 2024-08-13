@@ -3,10 +3,34 @@ import { MdOutlineNoteAlt } from "react-icons/md";
 import { MdOutlineNoteAdd } from "react-icons/md";
 import { CiVideoOn } from "react-icons/ci";
 import { MdOutlineVoiceOverOff } from "react-icons/md";
+import OrderMedicine from "./home/OrderMedicine";
+
+const productCategories = [
+  {
+    pathname: "Supplement",
+    image:
+      "https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fcategories%2Fdrugs.png&w=96&q=75",
+  },
+  {
+    pathname: "Women's choice",
+    image:
+      "https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fcategories%2Fwoman.png&w=96&q=75",
+  },
+  {
+    pathname: "Diabetic Care",
+    image:
+      "https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fcategories%2FDiabetics-Care.png&w=96&q=75",
+  },
+  {
+    pathname: "Baby Care",
+    image:
+      "https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fcategories%2Fbaby-boy.png&w=96&q=75",
+  },
+];
 
 const HeroSection = () => {
   return (
-    <div className="">
+    <section className="">
       <div>
         <Image
           width={1200}
@@ -35,7 +59,29 @@ const HeroSection = () => {
           <h1>Call to Order: ****</h1>
         </div>
       </div>
-    </div>
+
+      {/* product categories */}
+      <div className="my-12">
+        <h1 className="text-3xl font-semibold ">Product Categories</h1>
+        <div className="my-4 grid lg:grid-cols-4 md:grid-cols-2 gap-4 justify-items-center">
+          {productCategories.map((category, index) => {
+            return (
+              <div key={index}>
+                <Image
+                  width={100}
+                  height={100}
+                  src={category.image}
+                  alt="image"
+                />
+                <h1>{category.pathname}</h1>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <OrderMedicine />
+    </section>
   );
 };
 
